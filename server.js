@@ -35,6 +35,6 @@ app.post('/api/share', (req, res) => {
     res.status(200).send()
 })
 
-app.listen(5001, () => {
+app.listen(process.env.PORT || 5001, () => {
     console.log('listening on 5001')
 })
